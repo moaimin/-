@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>筋肥大トラッカー</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+  <h1>筋肥大トラッカー</h1>
+
+  <h2>今日の栄養入力</h2>
+
+  <input type="number" id="protein" placeholder="タンパク質 g">
+  <input type="number" id="fat" placeholder="脂質 g">
+  <input type="number" id="carb" placeholder="炭水化物 g">
+  <input type="number" id="weight" placeholder="体重 kg">
+
+  <button onclick="saveData()">保存</button>
+
+  <h2>目標との差</h2>
+  <div id="result"></div>
+
+  <h2>達成率</h2>
+  <div class="rate-container">
+    <div>
+      <p>タンパク質</p>
+      <div id="proteinRate" class="rate"></div>
+    </div>
+    <div>
+      <p>脂質</p>
+      <div id="fatRate" class="rate"></div>
+    </div>
+    <div>
+      <p>炭水化物</p>
+      <div id="carbRate" class="rate"></div>
+    </div>
+  </div>
+
+  <h2>体重推移</h2>
+  <canvas id="weightChart"></canvas>
+
+  <script src="app.js"></script>
+</body>
+
+</html>

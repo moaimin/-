@@ -1,0 +1,39 @@
+body {
+  font-family: sans-serif;
+  padding: 20px;
+  background: #111;
+  color: white;
+}
+
+input {
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  width: 100%;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px;
+  width: 100%;
+  font-size: 16px;
+  background: #00c853;
+  color: white;
+  border: none;
+}
+
+canvas {
+  margin-top: 20px;
+  background: white;
+}
+
+.rate-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.rate {
+  font-size: 28px;
+  font-weight: bold;
+}
