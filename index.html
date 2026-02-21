@@ -45,6 +45,13 @@
   <canvas id="weightChart"></canvas>
 
   <script src="app.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('./sw.js')
+        .then(() => console.log('Service Worker 登録成功'))
+        .catch(err => console.log('Service Worker 登録失敗', err));
+    }
+  </script>
 </body>
 
 </html>
